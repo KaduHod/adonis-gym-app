@@ -1,0 +1,35 @@
+@layout('layouts/main')
+@set('title','Dashboard')
+
+@section('body')
+    <h1>Dashboard</h1>
+    <div class="main-container">
+        <div class="choose-profile-container">
+            <div class='profile-card card' id="Aluno-profile">
+                @if(user.alunoProfile)
+                    <a href="">
+                        <h1>Entrar como aluno</h1>
+                    </a>               
+                @else
+                    <a href="">
+                        <h1>Registrar-se como aluno</h1>
+                    </a> 
+                @end
+            </div>
+            <div class='profile-card card' id="Personal-profile">
+                @if(user.personalProfile)
+                    <a href="">
+                        <h1>Entrar como professor</h1>
+                    </a>               
+                @else
+                    <a href="">
+                        <h1>Registrar-se como professor</h1>
+                    </a> 
+                @end
+            </div>
+        </div>
+        
+    </div>
+    
+@end
+

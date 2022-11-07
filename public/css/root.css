@@ -1,0 +1,8 @@
+.main-container{
+    width: 100vw;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}

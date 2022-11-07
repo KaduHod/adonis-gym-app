@@ -1,0 +1,10 @@
+#login-form, #register-form{
+    width: 40vw;
+    min-width: 600px;
+}
+#login-container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,35 @@
+@layout('layouts/main')
+@set('title','Login page')
+
+@section('body')
+<div class="p-3" id='login-container'>
+    <form id="login-form" class="form-control" method="POST" action="{{route('login')}}" class="container-fluid p-3">
+        <div class="row p-1 col">
+            <label for="email" class="col">
+                <h2>Email</h2>
+            </label>
+            <input class="form-control" type="text" name="email" id="">
+        </div>
+        <div class="row p-1 col">
+            <label for="password" >
+                <h2>Senha</h2>
+            </label>
+            <input class="form-control" type="text" name="password" id="">
+        </div>      
+        <div class="row p-1 col">
+            <button class="btn btn-danger col" data-submit="true">Logar</button>
+            <a href="{{route('registerView')}}" class="btn btn-danger col">Registre-se</a>
+        </div>
+        <div id="login-error-container">
+
+        </div>
+    </form>
+</div>
+<script src="/js/login.formulario.js"></script>
+<script>
+    const form = new LoginForm({
+        form: document.getElementById('login-form'),
+        errorsContainer : document.getElementById('login-error-container')
+    })
+</script>
+@end

@@ -1,0 +1,12 @@
+.profile-card{
+    width: 310px;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose-profile-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}

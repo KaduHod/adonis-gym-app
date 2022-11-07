@@ -1,0 +1,11 @@
+@layout('layouts/main')
+@set('title','Choose between aluno and personal')
+
+@section('body')
+    <div class="main-container">
+        <form class="form-control" action="{{route('registerPersonal')}}" method="post">
+            <button class="btn btn-danger" type="submit">Criar perfil de professor</button>
+        </form>        
+    </div>
+    
+@end
