@@ -1,5 +1,5 @@
-<nav class="menu-container">
-    <div class="menu-hamburguer-wrapper" id="hamburguer-menu">
+<nav class="menu-container" id="hamburguer-menu">
+    <div class="menu-hamburguer-wrapper" >
         <div class="menu-hamburguer-container group">
             <div class="menu-hamburguer-item group-hover:bg-white"></div>
             <div class="menu-hamburguer-item mt-1 group-hover:bg-white"></div>
@@ -59,7 +59,7 @@
                 if(key === 'print') console.log(target);
                 return target[key]
             },
-            set(target, key, newValue)
+        set(target, key, newValue)
             {
                 return target[key] = newValue;
             }
@@ -71,11 +71,13 @@
 
     HamburguerMenu = HamburguerMenuDecorator(HamburguerMenu);
 
-    const hamburguerMenuInstance = HamburguerMenu({
-        htmlElement: document.getElementById('hamburguer-menu'), 
-        contentElement: document.getElementById('hambuguer-content'), 
+    const hamburguerOptions = {
+        hamburguerElement: document.getElementById('hamburguer-menu')
+        contentElement: document.getElementById('hambuguer-content')
         closeElement: document.getElementById('hamburguer-close')
-    })
+    }
+
+    const hamburguerMenuInstance = HamburguerMenu(hamburguerOptions)
 
     hamburguerMenuInstance.print
     
