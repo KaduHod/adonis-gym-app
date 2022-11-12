@@ -1,49 +1,48 @@
-@layout('layouts/main')
+@layout('layouts/choose_profile')
 @set('title','Choose between aluno and personal')
 
 @section('body')
     <div class="w-full h-full flex flex-col items-center">
-        <div class="p-6 w-3/4 flex">
-            <div class='card' id="Aluno-profile">
+        <div class="w-full h-full flex">
+            <div class='flex-1 flex  items-center justify-center hover:bg-black text-white transition text-2xl hover:text-4xl hover:cursor-pointer' id="Aluno-profile">
                 @if(user.alunoProfile)
-                <div class="card-image-container">
-                    oi
+                <div class="">
                     <img src="" alt="">
                 </div>
-                <div class="card-link">
+                <div class="">
                     <a  href="{{route('alunoDashboard')}}">
-                        <h1>Entrar como aluno</h1>
+                        <h1 >Entrar como aluno</h1>
                     </a>
                 </div>
                                    
                 @else
-                <div class="card-image-container">
+                <div class="">
                     oi
                     <img src="" alt="">
                 </div>
-                <div class="card-link">
+                <div class="transition duration-150">
                     <a  href="{{route('registerAlunoView')}}">
-                        <h1>Registrar-se como aluno</h1>
+                        <h1 class="text-2xl hover:text-4xl">Registrar-se como aluno</h1>
                     </a>
                 </div>
                      
                 @end
             </div>
-            <div class='card' id="Personal-profile">
+            <div class='flex-1 flex items-center justify-center hover:bg-black text-white transition text-2xl hover:text-4xl hover:cursor-pointer' id="Personal-profile">
                 @if(user.personalProfile)
-                    <div class="card-image-container">
+                    <div class="">
                         <img src="" alt="">
                     </div>
-                    <div class="card-link">
+                    <div class="transition duration-150">
                         <a  href="{{route('personalDashboard')}}">
                             <h1>Entrar como professor</h1>
                         </a>  
                     </div>        
                 @else
-                    <div class="card-image-container">
+                    <div class="">
                         <img src="" alt="">
                     </div>
-                    <div class="card-link">
+                    <div class="">
                         <a href="{{route('registerPersonalView')}}">
                             <h1>Registrar-se como professor</h1>
                         </a> 

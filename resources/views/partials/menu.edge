@@ -1,3 +1,83 @@
-<div>
-    Menu
-</div>
+<nav class="menu-container">
+    <div class="menu-hamburguer-wrapper" id="hamburguer-menu">
+        <div class="menu-hamburguer-container group">
+            <div class="menu-hamburguer-item group-hover:bg-white"></div>
+            <div class="menu-hamburguer-item mt-1 group-hover:bg-white"></div>
+            <div class="menu-hamburguer-item mt-1 group-hover:bg-white"></div>
+        </div>
+    </div>
+    <ul class="nav-bar" id="hambuguer-content">
+        <li class="nav-bar-item" id="hamburguer-close">Fechar</li>
+        <li class="nav-bar-item">Home</li>
+        <li class="nav-bar-item">Treinos</li>
+        <li class="nav-bar-item">Alunos</li>
+        <li class="nav-bar-item">Periodizações</li>
+        <li class="nav-bar-item">Exercícios</li>
+        <li class="nav-bar-item">Perfil</li>
+        <li class="nav-bar-item">Chat</li>
+    </ul>
+</nav>
+
+<script>
+    let HamburguerMenu = class HamburguerMenu 
+    {
+        constructor({htmlElement, contentElement, closeElement})
+        {
+            this.menu = htmlElement;
+            this.content = contentElement;
+            this.close = closeElement;
+            this.isOpen = false;
+            this.setEvents()
+        }
+
+        setEvents()
+        {
+            this.menu.addEventListener('click', this.handleMenuOpen)
+        }
+
+        close()
+        {
+
+        }
+
+        show()
+        {
+
+        }
+
+        handleMenuOpen(e)
+        {
+            if(this.isOpen) this.isOpen = false 
+            else this.isOpen = true
+            console.log(this.isOpen)
+        }
+    }
+
+    let HamburguerMenuDecorator = (HamburguerMenuClass) => {
+        return (...params) => {
+            return new Proxy(new HamburguerMenuClass(...params), {
+                get(target, key)
+                {
+                    if(key === 'print') console.log(target);
+                    return target[key]
+                },
+                set(target, key, newValue)
+                {
+                    return target[key] = newValue;
+                }
+            })
+        }
+    }
+
+    HamburguerMenu = HamburguerMenuDecorator(HamburguerMenu);
+
+    const hamburguerMenuInstance = HamburguerMenu({
+        htmlElement: document.getElementById('hamburguer-menu'), 
+        contentElement: document.getElementById('hambuguer-content'), 
+        closeElement: document.getElementById('hamburguer-close')
+    })
+
+    hamburguerMenuInstance.print
+    
+
+</script>
