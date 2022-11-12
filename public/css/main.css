@@ -1,0 +1,25 @@
+@tailwind base;
+
+.form-register{
+    @apply w-2/4 shadow-2xl p-6 bg-white rounded-xl flex flex-col justify-around;
+}
+.input{
+    @apply w-full border-b-2 outline-none;
+}
+.button{
+    @apply w-2/5 h-10 flex items-center justify-center rounded-xl shadow-xl text-center bg-rose-700 text-white hover:bg-black hover:text-white transition;
+}
+.link{
+    @apply w-2/5 h-10 flex items-center justify-center rounded-xl shadow-xl text-center bg-rose-700 text-white hover:bg-black hover:text-white transition;
+}
+.card{
+    @apply m-2 w-2/4 h-80 rounded-xl shadow-xl bg-white transition flex flex-col;
+}
+.card-image-container{
+    @apply w-full h-2/3;
+}
+.card-link{
+    @apply w-full bg-rose-700 h-1/3 rounded-b-xl flex items-center justify-center text-white text-xl transition hover:bg-black hover:text-white;
+}
+@tailwind components;
+@tailwind utilities;

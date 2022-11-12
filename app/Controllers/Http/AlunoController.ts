@@ -1,6 +1,7 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
-export default class AlunoController {
+export default class AlunoController 
+{
     
     public async index({ auth , view }: HttpContextContract): Promise<string>
     {

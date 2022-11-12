@@ -2,47 +2,47 @@
 @set('title','Login page')
 
 @section('body')
-<div class="p-3" id='login-container'>
-    <form id="register-form" class="form-control" class="container-fluid p-3">
-        <div class="row p-1 col">
+<div class="w-full flex flex-col p-6 items-center bg-rose-700 justify-center" id='login-container'>
+    <form id="register-form" class="form-register">
+        <div class="my-2">
             <label for="name" class="col">
                 <h2>Nome</h2>
             </label>
-            <input class="form-control" type="text" name="name" id="">
+            <input class="input" type="text" name="name" id="">
         </div>
-        <div class="row p-1 col">
+        <div class="my-2">
             <label for="nickname" class="col">
                 <h2>Nick name</h2>
             </label>
-            <input class="form-control" type="text" name="nickname" id="">
+            <input class="input" type="text" name="nickname" id="">
         </div>
-        <div class="row p-1 col">
+        <div class="my-2">
             <label for="email" class="col">
                 <h2>Email</h2>
             </label>
-            <input class="form-control" type="text" name="email" id="">
+            <input class="input" type="text" name="email" id="">
         </div> 
-        <div class="row p-1 col">
+        <div class="my-2">
             <label for="cellphone" >
                 <h2>Celular</h2>
             </label>
-            <input class="form-control" type="text" name="cellphone" id="">
+            <input class="input" type="text" name="cellphone" id="">
         </div>  
-        <div class="row p-1 col">
+        <div class="my-2">
             <label for="password" >
                 <h2>Senha</h2>
             </label>
-            <input class="form-control" type="text" name="password" id="">
+            <input class="input" type="text" name="password" id="">
         </div> 
-        <div class="row p-1 col">
+        <div class="my-2">
             <label for="confPassword" >
                 <h2>Confirmar senha</h2>
             </label>
-            <input class="form-control" type="text" name="confPassword" id="">
+            <input class="input" type="text" name="confPassword" id="">
         </div>    
-        <div class="row p-1 col">
-            <button class="btn btn-danger col" data-submit="true"> Registrar </button>
-            <a href="{{route('loginView')}}" class="btn btn-danger col">Login</a>
+        <div class="my-2 h-full my-2 flex items-center justify-around">
+            <button class="button" data-submit="true"> Registrar </button>
+            <a href="{{route('loginView')}}" class="button">Login</a>
         </div>
         <div id="register-error-container">
 

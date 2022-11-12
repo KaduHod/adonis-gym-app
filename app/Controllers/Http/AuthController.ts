@@ -1,9 +1,9 @@
-import { Response } from '@adonisjs/core/build/standalone';
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import User from 'App/Models/User';
 import UserRegisterValidator from 'App/Validators/UserRegisterValidator';
 
-export default class AuthController {
+export default class AuthController 
+{
     public async loginView({ view }:HttpContextContract): Promise<string>
     {
         return view.render('login');
@@ -15,7 +15,6 @@ export default class AuthController {
     }
 
     /**
-     * 
      * @param HttpContract
      * @returns redirects user to next page
      */
@@ -68,7 +67,7 @@ export default class AuthController {
     {
         const user = auth.use('web').user!
         if(!user) return;
-        await user.load(loader => {
+        await user.load( loader => {
             loader.load('alunoProfile')
             loader.load('personalProfile')
         })

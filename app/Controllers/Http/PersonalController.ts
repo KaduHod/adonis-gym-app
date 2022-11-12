@@ -1,7 +1,7 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
-export default class PersonalController {
-
+export default class PersonalController 
+{
     public async index({ auth , view }: HttpContextContract): Promise<string>
     {
         const user = auth.use('web').user!

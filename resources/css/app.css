@@ -1,21 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
-html, body {
-  background-color: #F7F8FA;
-  
-  height: 100vh;
-  color: #46444c;
-  position: relative;
-}
-
-body:before {
-  content: '';
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  position: absolute;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;

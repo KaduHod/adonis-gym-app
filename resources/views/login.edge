@@ -2,23 +2,36 @@
 @set('title','Login page')
 
 @section('body')
-<div class="p-3" id='login-container'>
-    <form id="login-form" class="form-control" method="POST" action="{{route('login')}}" class="container-fluid p-3">
-        <div class="row p-1 col">
-            <label for="email" class="col">
+<div class="w-full flex flex-col p-6 items-center justify-center" id='login-container'>
+    <form 
+        id="login-form" 
+        class="form-register" 
+        method="POST" 
+        action="{{route('login')}}"
+    >
+        <div class="m-3">
+            <label for="email" class="">
                 <h2>Email</h2>
             </label>
-            <input class="form-control" type="text" name="email" id="">
+            <input class="input" type="text" name="email" id="">
         </div>
-        <div class="row p-1 col">
+        <div class="m-3">
             <label for="password" >
                 <h2>Senha</h2>
             </label>
-            <input class="form-control" type="text" name="password" id="">
+            <input 
+                class="input" 
+                type="text" 
+                name="password" 
+                id=""
+            >
         </div>      
-        <div class="row p-1 col">
-            <button class="btn btn-danger col" data-submit="true">Logar</button>
-            <a href="{{route('registerView')}}" class="btn btn-danger col">Registre-se</a>
+        <div class="h-full m-3 flex items-center justify-around">
+            <button 
+                class="button bg-rose-700 text-white" 
+                data-submit="true"
+            >Logar</button>
+            <a class="button bg-rose-700 text-white" href="{{route('registerView')}}" >Registre-se</a>
         </div>
         <div id="login-error-container">
 
