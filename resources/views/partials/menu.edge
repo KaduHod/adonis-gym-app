@@ -53,20 +53,20 @@
         }
     }
 
-    let HamburguerMenuDecorator = (HamburguerMenuClass) => {
-        return (...params) => {
-            return new Proxy(new HamburguerMenuClass(...params), {
-                get(target, key)
-                {
-                    if(key === 'print') console.log(target);
-                    return target[key]
-                },
-                set(target, key, newValue)
-                {
-                    return target[key] = newValue;
-                }
-            })
+    const hamburguerHandler = {
+        get(target, key)
+            {
+                if(key === 'print') console.log(target);
+                return target[key]
+            },
+            set(target, key, newValue)
+            {
+                return target[key] = newValue;
+            }
         }
+
+    let HamburguerMenuDecorator = (HamburguerMenuClass) => {
+        return (...params) => new Proxy(new HamburguerMenuClass(...params), hamburguerHandler)
     }
 
     HamburguerMenu = HamburguerMenuDecorator(HamburguerMenu);
