@@ -3,14 +3,35 @@
 .form-register{
     @apply w-2/4 shadow-2xl p-6 bg-white rounded-xl flex flex-col justify-around;
 }
+.form-padrao{
+    @apply w-2/4 shadow-2xl p-6 bg-white rounded-xl flex flex-col justify-around;
+}
 .input{
     @apply w-full border-b-2 outline-none;
+}
+.input-2{
+    @apply w-full outline-none p-3 rounded-xl shadow-xl;
 }
 .button{
     @apply w-2/5 h-10 flex items-center justify-center rounded-xl shadow-xl text-center bg-rose-700 text-white hover:bg-black hover:text-white transition;
 }
 .link{
     @apply w-2/5 h-10 flex items-center justify-center rounded-xl shadow-xl text-center bg-rose-700 text-white hover:bg-black hover:text-white transition;
+}
+.profile-card-container{
+    @apply w-full h-fit mt-6 flex flex-col items-center;
+}
+.profile-card{
+    @apply rounded-3xl shadow-2xl w-4/5 h-96 bg-white flex;
+}
+.profile-card-image-container{
+    @apply flex items-center justify-center w-1/3 rounded-l-2xl  bg-red-900;
+}
+.profile-card-image{
+    @apply rounded-full w-60 h-60;
+}
+.profile-card-info-container{
+    @apply w-2/3 flex flex-col rounded-r-2xl;
 }
 .card{
     @apply m-2 w-2/4 h-80 rounded-xl shadow-xl bg-white transition flex flex-col;
@@ -22,22 +43,22 @@
     @apply w-full bg-rose-700 h-1/3 rounded-b-xl flex items-center justify-center text-white text-xl transition hover:bg-black hover:text-white;
 }
 .menu-container{
-    @apply block absolute top-5 left-5 ;
+    @apply block absolute top-2 left-2 ;
 }
 .nav-bar{
-    @apply p-6 flex flex-col text-white border rounded-xl bg-white text-black shadow-xl hover:cursor-pointer ;
+    @apply p-2 flex flex-col text-white border rounded-xl bg-white text-black shadow-xl hover:cursor-pointer ;
 }
 .nav-bar-item{
-    @apply m-4 transition hover:scale-105;
+    @apply m-4 transition hover:scale-105 ;
 }
 .menu-hamburguer-wrapper{
-    @apply w-full flex items-center justify-center;
+    @apply w-full flex items-center justify-start;
 }
 .menu-hamburguer-container{
     @apply w-fit p-4 bg-white hover:cursor-pointer hover:bg-rose-800 transition shadow-2xl mb-2 rounded-full flex flex-col items-center justify-around ;
 }
 .menu-hamburguer-item{
-    @apply w-7 h-1 relative bg-black rounded-xl transition ;
+    @apply w-6 h-1 relative bg-black rounded-xl transition ;
 }
 @tailwind components;
 @tailwind utilities;

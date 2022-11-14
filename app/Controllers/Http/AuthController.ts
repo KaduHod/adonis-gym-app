@@ -1,6 +1,7 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import User from 'App/Models/User';
 import UserRegisterValidator from 'App/Validators/UserRegisterValidator';
+import session from 'Config/session';
 
 export default class AuthController 
 {
@@ -18,7 +19,7 @@ export default class AuthController
      * @param HttpContract
      * @returns redirects user to next page
      */
-    public async login({ auth, request, response }:HttpContextContract): Promise<void>
+    public async login({ auth, request, response, session }:HttpContextContract): Promise<void>
     {
         const email = request.input('email')
         const password = request.input('password')
@@ -30,7 +31,7 @@ export default class AuthController
           return response.redirect().back()
         }
     }
-
+ 
     /**
      * Registra um usuario
      * @param HttpContext

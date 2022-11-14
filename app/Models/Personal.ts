@@ -34,4 +34,15 @@ export default class Personal extends BaseModel {
     foreignKey : 'personal_id'
   })
   public alunos: HasMany<typeof Aluno>
+
+ 
+  public static async loadAlunos(personal:Personal):Promise<void>
+  {
+    await personal.load(loader => {
+      loader.load('alunos')
+    })
+    for await (const aluno of personal.alunos){
+        await aluno.load('user')
+    }
+  }
 }

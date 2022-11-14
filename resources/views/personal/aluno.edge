@@ -1,0 +1,20 @@
+@layout('layouts/dashboard')
+@set('title','Personal')
+
+@section('body')
+    <div class="main-container">
+        <div class="w-full flex flex-col items-center p-3">
+            <div class="profile-card-container">
+                <div class="profile-card">
+                    <div class="profile-card-image-container">
+                        <img src="/images/randomperson.jpg" class="profile-card-image" alt="">
+                    </div>
+                    <div class="profile-card-info-container bg-cover" style="background-image:url('/images/bc.jpg')" 
+                    >
+                        <h1 class="flex items-center w-full text-center justify-center p-3 text-4xl text-red-900">{{aluno.user.name}}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+@end

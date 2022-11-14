@@ -1,8 +1,10 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+import Aluno from 'App/Models/Aluno'
+import Personal from 'App/Models/Personal'
 
 export default class PersonalController 
 {
-    public async index({ auth , view }: HttpContextContract): Promise<string>
+    public async index({ auth ,view , session}: HttpContextContract): Promise<string>
     {
         const user = auth.use('web').user!
         return view.render('personal/dashboard',{ user })
@@ -43,4 +45,45 @@ export default class PersonalController
         }
         
     }
+
+    public async alunos({ auth, response, session, view }: HttpContextContract): Promise<any>
+    {
+        try{
+            const user = auth.use('web').user!
+            await user.load( loader => {
+                loader.load('personalProfile')
+            })
+            const personal = user.personalProfile;
+            await Personal.loadAlunos(personal)
+            
+            // return response.send(user)
+            return view.render('personal/alunos', {user});
+        }catch(error){
+            console.log(error)
+            return response.status(301)
+                            .redirect()
+                            .back()
+        }
+    }
+
+    public async aluno({ auth, request, response, session, view}:HttpContextContract): Promise<string | void>
+    {
+        try {
+            const user = auth.use('web').user!
+            const {id} = request.params();
+            const aluno = await Aluno
+                                    .query()
+                                    .where({id})
+                                    .first();
+            await aluno?.load('user');
+
+            return view.render('personal/aluno', {aluno, user})
+        } catch (error) {
+            console.log(error)
+            return response.status(301)
+                            .redirect()
+                            .back()
+        }
+    }
+    
 }

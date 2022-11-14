@@ -39,6 +39,8 @@ Route.group(() => {
 
   Route.group(() => {
     Route.get('/dashboard', 'PersonalController.index').as('personalDashboard')
+    Route.get('/alunos', 'PersonalController.alunos').as('personalAlunos')
+    Route.get('/alunos/:id', 'PersonalController.aluno').as('personal-aluno')
   }).prefix('personal')
 
   Route.get('/choose-profile', 'AuthController.chooseProfile').as('chooseProfile')

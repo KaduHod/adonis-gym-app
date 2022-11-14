@@ -1,85 +1,51 @@
 <nav class="menu-container" id="hamburguer-menu">
     <div class="menu-hamburguer-wrapper" >
-        <div class="menu-hamburguer-container group">
-            <div class="menu-hamburguer-item group-hover:bg-white"></div>
-            <div class="menu-hamburguer-item mt-1 group-hover:bg-white"></div>
-            <div class="menu-hamburguer-item mt-1 group-hover:bg-white"></div>
+        <div class="menu-hamburguer-container group" id="hamburguer-icon">
+            <ion-icon
+                class="scale-150 group-hover:text-white hidden" 
+                name="reorder-three-outline" 
+                id="hamburguer-open">
+            </ion-icon>
+            <ion-icon 
+                class="scale-150 group-hover:text-white" 
+                name="close-outline" 
+                id="hamburguer-close">
+            </ion-icon>
         </div>
     </div>
     <ul class="nav-bar" id="hambuguer-content">
-        <li class="nav-bar-item" id="hamburguer-close">Fechar</li>
-        <li class="nav-bar-item">Home</li>
-        <li class="nav-bar-item">Treinos</li>
-        <li class="nav-bar-item">Alunos</li>
-        <li class="nav-bar-item">Periodizações</li>
-        <li class="nav-bar-item">Exercícios</li>
-        <li class="nav-bar-item">Perfil</li>
-        <li class="nav-bar-item">Chat</li>
+        <li class="nav-bar-item">
+            <ion-icon name="home-outline"></ion-icon>
+            <a href="">Home</a>
+        </li>
+        <li class="nav-bar-item">
+            <ion-icon name="barbell-outline"></ion-icon>
+            <a href="">Treinos</a>
+        </li>
+        <li class="nav-bar-item">
+            <ion-icon name="barbell-outline"></ion-icon>
+            <a href="">Exercícios</a>
+        </li>
+        <li class="nav-bar-item">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <a href="">Periodizações</a>
+        </li>
+        <li class="nav-bar-item">
+            <ion-icon name="people-outline"></ion-icon>
+            <a href="{{route('personalAlunos')}}">Alunos</a>
+        </li>
+        <li class="nav-bar-item">
+            <ion-icon name="person-add-outline"></ion-icon>
+            <a href="{{route('personalAlunos')}}">Criar aluno</a>
+        </li>
+        <li class="nav-bar-item">
+            <ion-icon name="person-outline"></ion-icon>
+            <a href="">Perfil</a>
+        </li>
+        <li class="nav-bar-item">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+            <a href="">Chat</a>
+        </li>
     </ul>
 </nav>
-
-<script>
-    let HamburguerMenu = class HamburguerMenu 
-    {
-        constructor({htmlElement, contentElement, closeElement})
-        {
-            this.menu = htmlElement;
-            this.content = contentElement;
-            this.close = closeElement;
-            this.isOpen = false;
-            this.setEvents()
-        }
-
-        setEvents()
-        {
-            this.menu.addEventListener('click', this.handleMenuOpen)
-        }
-
-        close()
-        {
-
-        }
-
-        show()
-        {
-
-        }
-
-        handleMenuOpen(e)
-        {
-            if(this.isOpen) this.isOpen = false 
-            else this.isOpen = true
-            console.log(this.isOpen)
-        }
-    }
-
-    const hamburguerHandler = {
-        get(target, key)
-        {
-            if(key === 'print') console.log(target);
-            return target[key]
-        },
-        set(target, key, newValue)
-        {
-            return target[key] = newValue;
-        }
-    }
-
-    let HamburguerMenuDecorator = (HamburguerMenuClass) => {
-        return (...params) => new Proxy(new HamburguerMenuClass(...params), hamburguerHandler)
-    }
-
-    HamburguerMenu = HamburguerMenuDecorator(HamburguerMenu);
-
-    const hamburguerOptions = {
-        hamburguerElement: document.getElementById('hamburguer-menu'),
-        contentElement: document.getElementById('hambuguer-content'),
-        closeElement: document.getElementById('hamburguer-close')
-    }
-
-    const hamburguerMenuInstance = HamburguerMenu(hamburguerOptions)
-
-    hamburguerMenuInstance.print
-    
-
-</script>
+<script type="module" src="/js/hamburguerMenu.js"></script>
