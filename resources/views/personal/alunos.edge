@@ -2,44 +2,48 @@
 @set('title','Personal')
 
 @section('body')
-<div class="main-container">
-    <div class="w-full flex flex-col items-center p-3">
-        <form id="aluno-search-container" class="flex">
-            <input type="search" class="input-2 m-2" name="search" placeholder="Pesquisar aluno...">
-            <button class="m-2 bg-white rounded-full w-20 flex items-center jusitfy-center shadow-2xl">
-                <ion-icon class="text-black scale-120 hover:scale-150 transition w-full" name="search-outline"></ion-icon>
-            </button>
-        </form>
-        <div id="meus-aluno" class="flex flex-col bg-white rounded-xl shadow-2xl p-6 overflow-y-scroll max-h-96">
-            <table class="table-auto">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Nome</th>
-                        <th>Nick name</th>
-                        <th>Email</th>
-                        <th>Ações</th>
+
+<div class="w-screen flex flex-col items-center bg-red-900">
+    <form id="aluno-search-container" class="flex">
+        <input type="search" class="input-2 m-2" name="search" placeholder="Pesquisar aluno...">
+        <button class="m-2 bg-white rounded-full w-20 flex items-center jusitfy-center shadow-2xl">
+            <ion-icon class="text-black scale-120 hover:scale-150 transition w-full" name="search-outline"></ion-icon>
+        </button>
+    </form>
+    <div id="meus-aluno" class="flex flex-col bg-white rounded-xl shadow-2xl p-6 overflow-y-scroll max-h-96">
+        <h1 class="title text-right">Meus alunos</h1>
+        <table class="table-auto mt-2">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Nick name</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody >
+                @each(aluno in user.personalProfile.alunos)
+                    <tr class="hover:bg-gray-100 curosor-pointer">
+                        <th class="p-4">{{aluno.id}}</th>
+                        <th class="p-4">{{aluno.user.name}}</th>
+                        <th class="p-4">{{aluno.user.nickname}}</th>
+                        <th class="p-4">{{aluno.user.email}}</th>
+                        <th>
+                            <a href="{{route('personalAluno', {id:aluno.id})}}">
+                                <ion-icon class="hover:scale-110 hover:cursor-pointer" name="settings-outline" title="Editar"></ion-icon>
+                            </a>
+                            
+                        </th>
                     </tr>
-                </thead>
-                <tbody >
-                    @each(aluno in user.personalProfile.alunos)
-                        <tr class="hover:bg-gray-100 curosor-pointer">
-                            <th class="p-4">{{aluno.id}}</th>
-                            <th class="p-4">{{aluno.user.name}}</th>
-                            <th class="p-4">{{aluno.user.nickname}}</th>
-                            <th class="p-4">{{aluno.user.email}}</th>
-                            <th>
-                                <a href="{{route('personal-aluno', {id:aluno.id})}}">
-                                    <ion-icon class="hover:scale-110 hover:cursor-pointer" name="settings-outline"></ion-icon>
-                                </a>
-                                
-                            </th>
-                        </tr>
-                    @endeach
-                </tbody>
-            </table>
-        </div>
-    </div>    
-</div>
+                @endeach
+            </tbody>
+        </table>
+    </div> 
+    <div class="flex">
+        <a href="{{route('personalCriarAluno')}}" class="button w-fit p-6 mt-4 bg-white text-black">Registrar novo Aluno</a>
+    </div>
+</div>    
+
     
 @end

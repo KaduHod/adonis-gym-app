@@ -1,4 +1,5 @@
 import { classProxyDecorator } from '/js/decorators.js'
+
 let HamburguerMenu = class HamburguerMenu 
 {
     constructor({
@@ -17,6 +18,7 @@ let HamburguerMenu = class HamburguerMenu
         this.isOpen = true;
         this.setEvents();
     }
+    
     setEvents()
     {
         this.icon.addEventListener('click', this.handleMenuOpen)

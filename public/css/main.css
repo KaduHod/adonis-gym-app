@@ -1,5 +1,8 @@
 @tailwind base;
 
+.title{
+    @apply text-2xl ;
+}
 .form-register{
     @apply w-2/4 shadow-2xl p-6 bg-white rounded-xl flex flex-col justify-around;
 }
@@ -13,7 +16,7 @@
     @apply w-full outline-none p-3 rounded-xl shadow-xl;
 }
 .button{
-    @apply w-2/5 h-10 flex items-center justify-center rounded-xl shadow-xl text-center bg-rose-700 text-white hover:bg-black hover:text-white transition;
+    @apply w-2/5 h-10 flex items-center justify-center rounded-xl shadow-xl text-center bg-red-900 text-white hover:bg-black hover:text-white transition hover:cursor-pointer;
 }
 .link{
     @apply w-2/5 h-10 flex items-center justify-center rounded-xl shadow-xl text-center bg-rose-700 text-white hover:bg-black hover:text-white transition;
@@ -55,7 +58,7 @@
     @apply w-full flex items-center justify-start;
 }
 .menu-hamburguer-container{
-    @apply w-fit p-4 bg-white hover:cursor-pointer hover:bg-rose-800 transition shadow-2xl mb-2 rounded-full flex flex-col items-center justify-around ;
+    @apply w-fit p-4 bg-white hover:cursor-pointer hover:bg-red-900 transition shadow-2xl mb-2 rounded-full flex flex-col items-center justify-around ;
 }
 .menu-hamburguer-item{
     @apply w-6 h-1 relative bg-black rounded-xl transition ;

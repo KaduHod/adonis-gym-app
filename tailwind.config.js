@@ -14,8 +14,8 @@ module.exports = {
         }
       },
       animation: {
-        'hide':'hide 50ms ease-in-out forwards',
-        'show':'show 50ms ease-in-out forwards',
+        'hide':'hide 100ms ease-in-out forwards',
+        'show':'show 100ms ease-in-out forwards',
       }
     },
   },

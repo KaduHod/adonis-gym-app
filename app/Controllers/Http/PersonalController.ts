@@ -85,5 +85,20 @@ export default class PersonalController
                             .back()
         }
     }
+
+    public async createAlunoView({ auth, view, response }:HttpContextContract):Promise<string | void>
+    {
+        try {
+            const user = auth.use('web').user!
+            await user.load('personalProfile');
+            return view.render('personal/criar-aluno', {user});
+        } catch (error) {
+            console.log(error)
+            return response.status(301)
+                            .redirect()
+                            .back()
+        }
+        
+    }
     
 }
