@@ -1,28 +1,28 @@
 import BaseSchema from '@ioc:Adonis/Lucid/Schema'
 
 export default class extends BaseSchema {
-  protected tableName = 'muscle_articulation'
+  protected tableName = 'articulation_movement_muscle'
 
   public async up () {
     this.schema.createTable(this.tableName, (table) => {
-      table.increments('id').primary()
+      table.increments('id')
 
       /**
        * Relations
        */
-      table
-        .integer('muscle_id')
+       table
+        .integer('articulation_muscle_id')
         .unsigned()
-        .references('muscles.id')
+        .references('articulation_muscle.id')
         .onDelete('CASCADE')
         .notNullable()
 
       table
-        .integer('articulation_id')
+        .integer('movement_id')
         .unsigned()
-        .notNullable()
-        .references('articulations.id')
+        .references('movements.id')
         .onDelete('CASCADE')
+        .notNullable()
 
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL

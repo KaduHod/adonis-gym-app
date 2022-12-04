@@ -1,0 +1,432 @@
+[
+    {
+        "articulation_id": 1,
+        "name": "Scapula & Clavicle",
+        "movements": [
+            {
+                "movement_id": 1,
+                "name": "Abduction (Protraction)"
+            },
+            {
+                "movement_id": 2,
+                "name": "Adduction (Retraction)"
+            },
+            {
+                "movement_id": 3,
+                "name": "Depression"
+            },
+            {
+                "movement_id": 4,
+                "name": "Elevation"
+            },
+            {
+                "movement_id": 5,
+                "name": "Upward Rotation (Superior Rotation)"
+            },
+            {
+                "movement_id": 6,
+                "name": "Downward Rotation (Inferior Rotation)"
+            }
+        ]
+    },
+    {
+        "articulation_id": 2,
+        "name": "Shoulder Glenohumeral",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 8,
+                "name": "Extension"
+            },
+            {
+                "movement_id": 9,
+                "name": "Adduction"
+            },
+            {
+                "movement_id": 10,
+                "name": "Abduction"
+            },
+            {
+                "movement_id": 11,
+                "name": "Transverse Adduction"
+            },
+            {
+                "movement_id": 12,
+                "name": "Transverse Flexion"
+            },
+            {
+                "movement_id": 13,
+                "name": "Transverse Abduction"
+            },
+            {
+                "movement_id": 14,
+                "name": "Transverse Extension"
+            },
+            {
+                "movement_id": 15,
+                "name": "Medial Rotation (Internal Rotation)"
+            },
+            {
+                "movement_id": 16,
+                "name": "Lateral Rotation (External Rotation)"
+            }
+        ]
+    },
+    {
+        "articulation_id": 3,
+        "name": "Elbow",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 8,
+                "name": "Extension"
+            }
+        ]
+    },
+    {
+        "articulation_id": 4,
+        "name": "Forearm Radioulnar",
+        "movements": [
+            {
+                "movement_id": 17,
+                "name": "Pronation"
+            },
+            {
+                "movement_id": 18,
+                "name": "Supination"
+            }
+        ]
+    },
+    {
+        "articulation_id": 5,
+        "name": "Wrist & Midcarpals",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 19,
+                "name": "Extension / Hyperextension"
+            },
+            {
+                "movement_id": 20,
+                "name": "Adduction (Ulna Deviation)"
+            },
+            {
+                "movement_id": 21,
+                "name": "Abduction (Radial Deviation)"
+            }
+        ]
+    },
+    {
+        "articulation_id": 6,
+        "name": "Finger Metacarpophalangeal",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 19,
+                "name": "Extension / Hyperextension"
+            },
+            {
+                "movement_id": 9,
+                "name": "Adduction"
+            },
+            {
+                "movement_id": 10,
+                "name": "Abduction"
+            }
+        ]
+    },
+    {
+        "articulation_id": 7,
+        "name": "Finger Interphalangeal",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 8,
+                "name": "Extension"
+            }
+        ]
+    },
+    {
+        "articulation_id": 8,
+        "name": "Thumb Carpometacarpal",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 8,
+                "name": "Extension"
+            },
+            {
+                "movement_id": 9,
+                "name": "Adduction"
+            },
+            {
+                "movement_id": 10,
+                "name": "Abduction"
+            },
+            {
+                "movement_id": 22,
+                "name": "Opposition"
+            }
+        ]
+    },
+    {
+        "articulation_id": 9,
+        "name": "Thumb Metacarpophalangeal",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 8,
+                "name": "Extension"
+            },
+            {
+                "movement_id": 9,
+                "name": "Adduction"
+            },
+            {
+                "movement_id": 10,
+                "name": "Abduction"
+            }
+        ]
+    },
+    {
+        "articulation_id": 10,
+        "name": "Thumb Interphalangeal",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 19,
+                "name": "Extension / Hyperextension"
+            }
+        ]
+    },
+    {
+        "articulation_id": 11,
+        "name": "Neck Atlantoccipital & Antlantoaxial",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 19,
+                "name": "Extension / Hyperextension"
+            },
+            {
+                "movement_id": 23,
+                "name": "Lateral Flexion (Abduction)"
+            },
+            {
+                "movement_id": 24,
+                "name": "Reduction (Adduction)"
+            },
+            {
+                "movement_id": 25,
+                "name": "Rotation"
+            }
+        ]
+    },
+    {
+        "articulation_id": 12,
+        "name": "Spine Cervical",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 19,
+                "name": "Extension / Hyperextension"
+            },
+            {
+                "movement_id": 23,
+                "name": "Lateral Flexion (Abduction)"
+            },
+            {
+                "movement_id": 24,
+                "name": "Reduction (Adduction)"
+            },
+            {
+                "movement_id": 25,
+                "name": "Rotation"
+            }
+        ]
+    },
+    {
+        "articulation_id": 13,
+        "name": "Spine Thoracic, Lumbar",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 19,
+                "name": "Extension / Hyperextension"
+            },
+            {
+                "movement_id": 23,
+                "name": "Lateral Flexion (Abduction)"
+            },
+            {
+                "movement_id": 24,
+                "name": "Reduction (Adduction)"
+            },
+            {
+                "movement_id": 25,
+                "name": "Rotation"
+            }
+        ]
+    },
+    {
+        "articulation_id": 14,
+        "name": "Hip",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 8,
+                "name": "Extension"
+            },
+            {
+                "movement_id": 9,
+                "name": "Adduction"
+            },
+            {
+                "movement_id": 10,
+                "name": "Abduction"
+            },
+            {
+                "movement_id": 11,
+                "name": "Transverse Adduction"
+            },
+            {
+                "movement_id": 13,
+                "name": "Transverse Abduction"
+            },
+            {
+                "movement_id": 15,
+                "name": "Medial Rotation (Internal Rotation)"
+            },
+            {
+                "movement_id": 16,
+                "name": "Lateral Rotation (External Rotation)"
+            }
+        ]
+    },
+    {
+        "articulation_id": 15,
+        "name": "Knee",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 8,
+                "name": "Extension"
+            },
+            {
+                "movement_id": 15,
+                "name": "Medial Rotation (Internal Rotation)"
+            },
+            {
+                "movement_id": 16,
+                "name": "Lateral Rotation (External Rotation)"
+            }
+        ]
+    },
+    {
+        "articulation_id": 16,
+        "name": "Ankle",
+        "movements": [
+            {
+                "movement_id": 26,
+                "name": "Plantar Flexion"
+            },
+            {
+                "movement_id": 27,
+                "name": "Dorsiflexion"
+            }
+        ]
+    },
+    {
+        "articulation_id": 17,
+        "name": "Foot Intertarsal",
+        "movements": [
+            {
+                "movement_id": 28,
+                "name": "Inversion (Supination)"
+            },
+            {
+                "movement_id": 29,
+                "name": "Eversion (Pronation)"
+            },
+            {
+                "movement_id": 26,
+                "name": "Plantar Flexion"
+            }
+        ]
+    },
+    {
+        "articulation_id": 18,
+        "name": "Toe Metatarsophalangeal",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 19,
+                "name": "Extension / Hyperextension"
+            },
+            {
+                "movement_id": 10,
+                "name": "Abduction"
+            },
+            {
+                "movement_id": 9,
+                "name": "Adduction"
+            }
+        ]
+    },
+    {
+        "articulation_id": 19,
+        "name": "Toe Interphalangeal",
+        "movements": [
+            {
+                "movement_id": 7,
+                "name": "Flexion"
+            },
+            {
+                "movement_id": 8,
+                "name": "Extension"
+            }
+        ]
+    }
+]

@@ -10,6 +10,9 @@ Route.post('/register', 'AuthController.register').as('register');
 
 Route.group(() => {
 
+  /**
+   * 
+   */
   Route.group(()=>{
     Route.get('/articulations', 'MusclesController.articulations').as('articulations')
   }).prefix('/new-data')
@@ -41,6 +44,10 @@ Route.group(() => {
     Route.get('/aluno/criar', 'PersonalController.createAlunoView').as('personalCriarAluno')
   }).prefix('personal')
 
-  Route.get('/choose-profile', 'AuthController.chooseProfile').as('chooseProfile')
-  Route.get('/dashboard', 'DashboardController.index').as('dashboard')
+  /**
+   * Choose profile
+   */
+  Route.get('/choose-profile', 'AuthController.chooseProfile').as('chooseProfile');
+  Route.get('/dashboard', 'DashboardController.index').as('dashboard');
+
 }).middleware(['auth']);

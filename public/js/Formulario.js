@@ -23,7 +23,9 @@ class Formulario {
     addField({id}){
         const newField = document.getElementById(id);
         const tagsAccepted = [
-            'input', 'text-area', 'select'
+            'input', 
+            'text-area', 
+            'select'
         ];
         if(tagsAccepted.indexOf(newField.tagName) == -1) return;
         this.addField.push(newField);

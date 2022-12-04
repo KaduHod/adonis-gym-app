@@ -1,7 +1,7 @@
 import BaseSchema from '@ioc:Adonis/Lucid/Schema'
 
 export default class extends BaseSchema {
-  protected tableName = 'muscle_articulation_movements'
+  protected tableName = 'movement_muscle'
 
   public async up () {
     this.schema.createTable(this.tableName, (table) => {
@@ -15,9 +15,9 @@ export default class extends BaseSchema {
         .notNullable()
 
       table
-        .integer('movements_articulations_id')
+        .integer('movement_id')
         .unsigned()
-        .references('movement_articulations.id')
+        .references('movements.id')
         .onDelete('CASCADE')
         .notNullable()
 

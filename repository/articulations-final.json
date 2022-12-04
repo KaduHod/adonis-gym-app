@@ -55,7 +55,7 @@
                 },
                 {
                     "link": "https://exrx.net/Muscles/PectoralisSternal",
-                    "name": "Pectoralis major (sternal head)"
+                    "name": "Pectoralis major"
                 },
                 {
                     "link": "https://exrx.net/Muscles/TrapeziusLower",
@@ -80,7 +80,7 @@
                 },
                 {
                     "link": "https://exrx.net/Muscles/SerratusAnterior",
-                    "name": "Serratus anterior"
+                    "name": "Serratus anterior (upper fibers)"
                 }
             ]
         },
@@ -97,7 +97,7 @@
                 },
                 {
                     "link": "https://exrx.net/Muscles/SerratusAnterior",
-                    "name": "Serratus anterior"
+                    "name": "Serratus anterior (lower fibers)"
                 }
             ]
         },
@@ -118,7 +118,7 @@
                 },
                 {
                     "link": "https://exrx.net/Muscles/PectoralisSternal",
-                    "name": "Pectoralis major (sternal head)"
+                    "name": "Pectoralis major"
                 },
                 {
                     "link": "https://exrx.net/Muscles/LatissimusDorsi",
@@ -143,9 +143,10 @@
                     "link": "https://exrx.net/Muscles/PectoralisClavicular",
                     "name": "Pectoralis major (clavicular head)"
                 },
+                "Coracobrachialis",
                 {
                     "link": "https://exrx.net/Muscles/BicepsBrachii",
-                    "name": "Biceps brachii"
+                    "name": "Biceps brachii (short head)"
                 }
             ]
         },
@@ -170,7 +171,7 @@
                 },
                 {
                     "link": "https://exrx.net/Muscles/TricepsBrachii",
-                    "name": "Triceps brachii"
+                    "name": "Triceps brachii (long head)"
                 }
             ]
         },
@@ -194,8 +195,11 @@
                     "name": "Teres major"
                 },
                 {
+                    "name": "Coracobrachialis"
+                },
+                {
                     "link": "https://exrx.net/Muscles/TricepsBrachii",
-                    "name": "Triceps brachii"
+                    "name": "Triceps brachii (long head)"
                 }
             ]
         },
@@ -230,7 +234,8 @@
                 {
                     "link": "https://exrx.net/Muscles/PectoralisClavicular",
                     "name": "Pectoralis major (clavicular head)"
-                }
+                },
+                "Coracobrachialis"
             ]
         },
         {
@@ -248,10 +253,10 @@
                     "link": "https://exrx.net/Muscles/DeltoidAnterior",
                     "name": "Deltoid (anterior)"
                 },
-                
+                "Coracobrachialis",
                 {
                     "link": "https://exrx.net/Muscles/BicepsBrachii",
-                    "name": "Biceps brachii"
+                    "name": "Biceps brachii (short head)"
                 }
             ]
         },
@@ -376,7 +381,8 @@
                 {
                     "link": "https://exrx.net/Muscles/TricepsBrachii",
                     "name": "Triceps brachii"
-                }
+                },
+                "Anconeus"
             ]
         }
     ],
@@ -384,14 +390,20 @@
         {
             "movment": "Pronation",
             "musclesFromMovement": [
+                "Pronator quadratus",
+                "Pronator teres",
                 {
-                    "name": "Wrist Flexors"
+                    "name": "Flexor carpi radialis"
+                },
+                {
+                    "name": "Anconeus"
                 }
             ]
         },
         {
             "movment": "Supination",
             "musclesFromMovement": [
+                "Supinator",
                 {
                     "link": "https://exrx.net/Muscles/BicepsBrachii",
                     "name": "Biceps Brachii"
@@ -405,27 +417,30 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor carpi radialis"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor carpi ulnaris"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Palmaris longus"
+                },
+                {
+                    "name": "Abductor pollicis longus"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor digitorum profundus"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor digitorum superficialis"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor pollicis longus"
                 }
             ]
         },
@@ -434,7 +449,31 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
+                    "name": "Extensor carpi radialis longus"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor carpi radialis brevis"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor carpi ulnaris"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor digitorum"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor pollicis longus"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor indicis"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor digiti minimi"
                 }
             ]
         },
@@ -443,11 +482,11 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor carpi ulnaris"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
+                    "name": "Extensor carpi ulnaris"
                 }
             ]
         },
@@ -456,15 +495,26 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
-                },
-                {
-                    "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Extensor carpi radialis longus"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
+                    "name": "Extensor carpi radialis brevis"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristFlexors",
+                    "name": "Flexor carpi radialis"
+                },
+                {
+                    "name": "Abductor pollicis longus"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor pollicis brevis"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor pollicis longus"
                 }
             ]
         }
@@ -475,7 +525,21 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor digitorum profundus"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristFlexors",
+                    "name": "Flexor digitorum superficialis"
+                },
+                "Flexor digiti minimi",
+                {
+                    "name": "Abductor digiti minimi"
+                },
+                {
+                    "name": "Interossei"
+                },
+                {
+                    "name": "Lumbricals"
                 }
             ]
         },
@@ -484,7 +548,15 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
+                    "name": "Extensor digitorum"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor digiti minimi"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor indicis"
                 }
             ]
         },
@@ -494,7 +566,11 @@
                 "Palmar interossei",
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor digitorum superficialis"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristFlexors",
+                    "name": "Flexor digitorum profundus"
                 }
             ]
         },
@@ -504,8 +580,17 @@
                 "Dorsal interosssei",
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
-                }
+                    "name": "Extensor digitorum"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor digiti minimi"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristExtensors",
+                    "name": "Extensor indicis"
+                },
+                "Abductor digiti minimi"
             ]
         }
     ],
@@ -515,7 +600,11 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor digitorum profundus"
+                },
+                {
+                    "link": "https://exrx.net/Muscles/WristFlexors",
+                    "name": "Flexor digitorum superficialis"
                 }
             ]
         },
@@ -524,16 +613,18 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
+                    "name": "Extensor digitorum"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
+                    "name": "Extensor digiti minimi"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
-                }
+                    "name": "Extensor indicis"
+                },
+                "Lumbricals",
+                "Interossei"
             ]
         }
     ],
@@ -541,9 +632,10 @@
         {
             "movment": "Flexion",
             "musclesFromMovement": [
+                "Flexor pollicis brevis",
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor pollicis longus"
                 },
                 {
                     "name": "Opponens pollicis"
@@ -555,23 +647,26 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
+                    "name": "Extensor pollicis longus"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
-                }
+                    "name": "Extensor pollicis brevis"
+                },
+                "Abductor pollicis longus"
             ]
         },
         {
             "movment": "Adduction",
             "musclesFromMovement": [
+                "Adductor pollicis",
+                "1st dorsal interosseous",
                 {
-                    "name": "Wrist Extensors"
+                    "name": "Extensor pollicis longus"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor pollicis longus"
                 }
             ]
         },
@@ -590,7 +685,7 @@
                 "Flexor pollicis brevis",
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor pollicis longus"
                 },
                 {
                     "name": "Adductor pollicis"
@@ -604,7 +699,7 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor pollicis longus"
                 },
                 "Flexor pollicis brevis",
                 {
@@ -620,11 +715,11 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
+                    "name": "Extensor pollicis longus"
                 },
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
+                    "name": "Extensor pollicis brevis"
                 }
             ]
         },
@@ -648,7 +743,7 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristFlexors",
-                    "name": "Wrist Flexors"
+                    "name": "Flexor pollicis longus"
                 }
             ]
         },
@@ -657,7 +752,7 @@
             "musclesFromMovement": [
                 {
                     "link": "https://exrx.net/Muscles/WristExtensors",
-                    "name": "Wrist Extensors"
+                    "name": "Extensor pollicis longus"
                 },
                 {
                     "name": "Abductor pollicis brevis"
@@ -1324,8 +1419,8 @@
             "movment": "Extension / Hyperextension",
             "musclesFromMovement": [
                 "Extensor hallucis longus",
-                "Wrist Extensors",
-                "Wrist Extensors brevis"
+                "Extensor digitorum",
+                "Extensor digitorum brevis"
             ]
         },
         {
@@ -1360,8 +1455,8 @@
             "movment": "Extension",
             "musclesFromMovement": [
                 "Extensor hallucis longus",
-                "Wrist Extensors longus",
-                "Wrist Extensors brevis"
+                "Extensor digitorum longus",
+                "Extensor digitorum brevis"
             ]
         }
     ]
